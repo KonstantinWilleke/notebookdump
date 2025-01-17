@@ -1,0 +1,13 @@
+model:
+  activation: SiLU
+  loss: CrossEntropy
+optimizer:
+  name: AdamW
+  lr: 10e-3
+  momentum: true
+data:
+  augmentation:
+    enable: true
+    types:
+      - affine
+      - hue
